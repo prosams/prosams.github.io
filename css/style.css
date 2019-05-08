@@ -1,0 +1,241 @@
+
+img{
+  width:100%;
+  height:auto;
+}
+
+body{
+  background: maroon;
+  color: white;
+  margin:5%;
+}
+
+.outer{
+  text-align: center;
+  margin: 0 0 2vh 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+p{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding:  1vh 0 1vh 1vh;
+}
+
+h1{
+  margin: 3vh;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 150%;
+}
+
+main{
+  width:100%;
+}
+
+div {
+  padding: 5px;
+  margin: 0px;
+}
+
+a:link {
+color: white;
+}
+
+a:hover {
+color: #2393EA;
+}
+
+a:visited {
+color: pink;
+}
+
+a:active {
+  background-color: yellow;
+}
+
+#skip a{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+#skip a:focus{
+  position:static;
+  width:auto;
+  height:auto;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav a.current {
+  color: #9623EA;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+nav a:hover {
+  background-color: #090d87;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:0 auto;
+}
+
+.container > div{
+  width:40vh;
+  border: 5px solid black;
+}
+
+nav a{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li{
+  display: inline-block;
+  background: brown;
+  text-align: center;
+  padding: 5px;
+  line-height: 25px;
+  border-width: 2px;
+  text-align: center;}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.accordion {
+  background-color: #0079C7;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 100%;
+  color: white;
+  cursor: pointer;
+  margin: 2vh 0 1vh 0;
+  padding: 3vh;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #25AF7F;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 1fr 0 1fr;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+}
+
+/* “If [device width] is greater than or equal to 600px, then do {…}” */
+@media only screen and (min-width: 600px) {
+  .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .container > div{
+    width:300px;
+    border: 5px solid white;
+  }
+
+  p{font-family: "Courier New", Courier, monospace
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  nav ul li{
+    display: inline-block;
+    /* width:25%; */
+    background: black;
+    padding: 10px;
+    min-height: 50px;
+    line-height: 50px;
+    border-width: 2px;
+    text-align: center;}
+
+    body{
+      background: firebrick;
+    }
+}
+
+/* laptop
+tablet
+mobile
+if  using max*/
+
+@media screen and (min-width: 1000px) {
+
+  .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    margin: 0 auto;
+  }
+  .container > div{
+    width:300px;
+    border: 5px solid black;
+  }
+
+  nav ul{
+		display: flex;
+    flex-direction: row;
+		justify-content: flex-end;
+    align-items: stretch;
+	}
+  nav ul li{
+		display: inline-block;
+		width:25%;
+		background: black;
+		padding: 10px;
+		min-height: 50px;
+		line-height: 50px;
+		border-width: 2px;
+		text-align: center;}
+
+  nav ul li a:hover, nav ul li a:focus {
+    color: black;
+    background-color: red;
+    font-weight: bold;
+  }
+
+  p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  body{
+      background: darkred;
+    }
+  }
