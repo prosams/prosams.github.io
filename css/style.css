@@ -10,34 +10,8 @@ body{
   margin:5%;
 }
 
-.outer{
-  text-align: center;
-  margin: 0 0 2vh 0;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-p{
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  padding:  1vh 0 1vh 1vh;
-}
-
-h1{
-  margin: 3vh;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 150%;
-}
-
 main{
   width:100%;
-}
-
-div {
-  padding: 5px;
-  margin: 0px;
 }
 
 a:link {
@@ -49,7 +23,7 @@ color: #2393EA;
 }
 
 a:visited {
-color: pink;
+color: green;
 }
 
 a:active {
@@ -91,31 +65,6 @@ nav a:hover {
   margin:0 auto;
 }
 
-.container > div{
-  width:40vh;
-  border: 5px solid black;
-}
-
-nav a{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: white;
-}
-
-nav ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-nav ul li{
-  display: inline-block;
-  background: brown;
-  text-align: center;
-  padding: 5px;
-  line-height: 25px;
-  border-width: 2px;
-  text-align: center;}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -124,21 +73,6 @@ nav ul li{
 
 .sticky + .content {
   padding-top: 102px;
-}
-
-.accordion {
-  background-color: #0079C7;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 100%;
-  color: white;
-  cursor: pointer;
-  margin: 2vh 0 1vh 0;
-  padding: 3vh;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
