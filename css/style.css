@@ -12,6 +12,10 @@ img{
   height:auto;
 }
 
+p{
+  padding-top: 1vh;
+}
+
 body{
   background: maroon;
   color: white;
@@ -108,7 +112,8 @@ nav a:hover {
     border: 5px solid white;
   }
 
-  p{font-family: "Courier New", Courier, monospace
+  p{
+    padding: .5vh;
   }
 
   nav ul{
