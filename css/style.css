@@ -12,6 +12,10 @@ img{
   height:auto;
 }
 
+h1{
+  padding-top: 2vh;
+}
+
 p{
   padding-top: 1vh;
 }
@@ -137,11 +141,6 @@ nav a:hover {
       background: firebrick;
     }
 }
-
-/* laptop
-tablet
-mobile
-if  using max*/
 
 @media screen and (min-width: 1000px) {
 
