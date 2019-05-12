@@ -154,7 +154,6 @@ if  using max*/
   nav ul{
 		display: flex;
     flex-direction: row;
-		justify-content: flex-end;
     align-items: stretch;
 	}
   nav ul li{
